@@ -10,6 +10,12 @@
         let img = document.getElementById('fimg');
         img.src = sel.options[sel.selectedIndex].value;
       }
+      function drawImage2()
+      {
+        let sel = document.getElementById('lunch');
+        let img = document.getElementById('fimg2');
+        img.src = sel.options[sel.selectedIndex].value;
+      }
     </script>
   </head>
   <body>
@@ -24,5 +30,15 @@
     </form>
     <br>
     주제2 오늘 점심 메뉴 선택 <br>
+    <form>
+      <select id = 'lunch' onchange='drawImage2()'>
+        <option value = 'Dumpling.jpg'> 만두국 </option>
+        <option value = 'Budae.jpg'> 부대찌개 </option>
+        <option value = 'Samgyeop.jpg'> 삼겹살 </option>
+        <option value = 'Sujebi.jpg'> 수제비 </option>
+        <option value = 'Guksu.jpg'> 막국수 </option>
+      </select>
+      <img id = 'fimg2' src = 'Dumpling.jpg' alt '설명문' width = 100 height = 100>
+    </form>
   </body>
 </html>
