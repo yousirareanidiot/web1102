@@ -3,6 +3,14 @@
   <meta charset = 'utf-8'>
   <head>
     <title> 리스트에서 자료 선택하기 </title>
+    <script>
+      function drawImage()
+      {
+        let sel = document.getElementById('fruits');
+        let img = document.getElementByid('fimg');
+        img.src = set.option[sel.selectedIndex].value;
+      }
+    </script>
   </head>
   <body>
     주제1. 내가 좋아하는 과일 선택 <br>
