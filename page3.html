@@ -5,6 +5,16 @@
     <title>
       page3
     </title>
+    <script>
+      function whatkeydown(event)
+      {
+        let str = ""; let div = document.getElementById("div");
+        div.innerHTML = "";
+        str += "e.key = " + e.key + "<br>";
+        str += "e.code = " + e.code + "<br>";
+        div.innerHTML = str;
+      }
+    </script>
   </head>
   <body>
     키 리스너와 키 이벤트 속성 출력하기 <br>
